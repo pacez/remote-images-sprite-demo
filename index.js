@@ -12,9 +12,6 @@ const imgList=[
   'http://img1.360buyimg.com/pop/s380x300_jfs/t16822/153/1323558748/48991/3b746909/5ac70356Nf7d24865.jpg!q90!cc_190x150'
 ];
 
-// 获取到的图片列表
-const imgWrapList=[];
-
 // 图片请求队列
 const imgReqQueue=imgList.map((item,i)=>{
     return new Promise((resolve, reject)=> {
@@ -28,8 +25,7 @@ const imgReqQueue=imgList.map((item,i)=>{
           res.on("end", function(){
             try{
               // 将获取的图片注入imgWrapList
-              imgWrapList.push(images(new Buffer(imgData,'binary')));
-              resolve();
+              resolve(images(new Buffer(imgData,'binary')));
             }catch(e){
               reject();
             }
@@ -38,7 +34,7 @@ const imgReqQueue=imgList.map((item,i)=>{
     });
 });
 
-Promise.all(imgReqQueue).then(()=>{
+Promise.all(imgReqQueue).then((imgWrapList)=>{
   // 设置背景画板尺寸
   var ca=images(190,450);
   // 遍历图片列表，拼接图片
