@@ -19,13 +19,13 @@
 
 1.	需要提前计算拼接后图片尺寸。因为node-images拼接图片的原理是，先创建一个大的透明图片做为画布，再在这个画布上进行图片拼接。所以需要提前计算拼接后图片的大小。这个前端或者后端都可以计算
 
-由于node-images只支持读取本地图片，这里我们修改了该库源码，暂时我们上传了整个node_modules依赖库。
-
 ### 运行
+
+\*注：由于node-images只支持读取本地图片，这里我们修改了该库源码，暂时我们上传了整个node_modules依赖库。
 
 Step1: 下载示例代码:
 
-```
+```javascript
 git clone https://github.com/pacez/remote-images-sprite-demo.git
 ```
 
@@ -33,7 +33,7 @@ Step2: 安装nodejs
 
 step3: 修改index.js, 将输出目录改为你本地目录
 
-```
+```javascript
 var output='/你本地某个目录/图片名称.jpg'
 ```
 
