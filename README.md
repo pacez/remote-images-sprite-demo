@@ -23,7 +23,7 @@
 1.	下载示例代码:
 
 	```javascript
-	          git clone https://github.com/pacez/remote-images-sprite-demo.git
+	  git clone https://github.com/pacez/remote-images-sprite-demo.git
 	```
 
 2.	安装nodejs
@@ -31,7 +31,7 @@
 3.	修改index.js, 将输出目录改为你本地目录
 
 	```javascript
-	        var output='/你本地某个目录/图片名称.jpg'
+	  var output='/你本地某个目录/图片名称.jpg'
 	```
 
 4.	进入代码根目录，运行node index.js，即可看到输出了一个拼接图片，实际应用场景我们不需要输出图片，转为base64码直接返回服务器即可。
