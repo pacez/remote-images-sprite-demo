@@ -1,0 +1,11 @@
+{
+  "name": "image-sprite",
+  "version": "1.0.0",
+  "description": "图片拼接服务",
+  "main": "index.js",
+  "author": "pace zhong",
+  "license": "MIT",
+  "dependencies": {
+    "images": "^3.0.1"
+  }
+}
