@@ -19,18 +19,17 @@
 
 \*注：由于node-images只支持读取本地图片，这里我们修改了该库源码，暂时我们上传了整个node_modules依赖库。该修改已提交给原作者，若原作者采纳，后面可以直接使用npm安装依赖。
 
-Step1: 下载示例代码:
+1.	下载示例代码:
 
 ```javascript
-git clone https://github.com/pacez/remote-images-sprite-demo.git
+    git clone https://github.com/pacez/remote-images-sprite-demo.git
 ```
 
-Step2: 安装nodejs
-
-step3: 修改index.js, 将输出目录改为你本地目录
+1.	安装nodejs
+2.	修改index.js, 将输出目录改为你本地目录
 
 ```javascript
-var output='/你本地某个目录/图片名称.jpg'
+  var output='/你本地某个目录/图片名称.jpg'
 ```
 
-Step4: 进入代码根目录，运行node index.js，即可看到输出了一个拼接图片，实际应用场景我们不需要输出图片，转为base64码直接返回服务器即可。
+1.	进入代码根目录，运行node index.js，即可看到输出了一个拼接图片，实际应用场景我们不需要输出图片，转为base64码直接返回服务器即可。
