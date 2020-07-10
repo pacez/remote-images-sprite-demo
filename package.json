@@ -1,5 +1,5 @@
 {
-  "name": "image-sprite",
+  "name": "image-url-sprite",
   "version": "1.0.0",
   "description": "图片拼接服务",
   "main": "index.js",
